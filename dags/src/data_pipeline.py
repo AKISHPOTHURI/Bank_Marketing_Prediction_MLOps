@@ -142,6 +142,7 @@ encode_categorical_task = PythonOperator(
     dag=dag,
 )
 
+
 correlation_analysis_task = PythonOperator(
     task_id='correlation_analysis',
     python_callable=correlation_analysis,

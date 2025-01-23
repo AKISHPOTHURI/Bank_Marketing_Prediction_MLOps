@@ -3843,3 +3843,122 @@ Name: proportion, dtype: float64
 2024-11-23 10:48:11,848 - INFO - File files/md5/75/Processed_Files/test_data already exists. Overwriting...
 2024-11-23 10:48:12,513 - INFO - Uploaded CSV data to gs://mlopsprojectdatabucketgrp6/files/md5/75/Processed_Files/test_data
 2024-11-23 10:48:12,520 - INFO - SMOTE analysis with scaling, normalization, and GCS upload completed successfully
+2025-01-23 11:19:11,092 - INFO - Starting data loading process
+2025-01-23 11:19:11,097 - INFO - Using pickle file: C:\Users\akish\Bank_Marketing_Prediction_MLOps\data\processed\raw_data.pkl
+2025-01-23 11:19:11,127 - INFO - Pickle file loaded successfully
+2025-01-23 11:19:11,584 - INFO - Data saved as CSV to: C:\Users\akish\Bank_Marketing_Prediction_MLOps\data\processed\raw_data.csv
+2025-01-23 11:19:11,592 - INFO - Data loading process completed successfully. Output file: C:\Users\akish\Bank_Marketing_Prediction_MLOps\data\processed\raw_data.csv
+2025-01-23 11:32:01,044 - INFO - Starting data processing
+2025-01-23 11:32:01,050 - INFO - Input file: C:\Users\akish\Bank_Marketing_Prediction_MLOps\data\processed\raw_data.csv
+2025-01-23 11:32:01,313 - INFO - Data loaded successfully. DataFrame shape: (45211, 17)
+2025-01-23 11:32:01,487 - INFO - DataFrame info saved to C:\Users\akish\Bank_Marketing_Prediction_MLOps\data\processed\dataframe_info.csv
+2025-01-23 11:32:01,557 - INFO - DataFrame description saved to C:\Users\akish\Bank_Marketing_Prediction_MLOps\data\processed\dataframe_description.csv
+2025-01-23 11:32:01,623 - INFO - No duplicate rows found.
+2025-01-23 11:32:02,409 - INFO - Percentage of null or unknown values in each column:
+2025-01-23 11:32:02,413 - INFO - age: 0.00%
+2025-01-23 11:32:02,417 - INFO - job: 0.64%
+2025-01-23 11:32:02,421 - INFO - marital: 0.00%
+2025-01-23 11:32:02,425 - INFO - education: 4.11%
+2025-01-23 11:32:02,428 - INFO - default: 0.00%
+2025-01-23 11:32:02,431 - INFO - balance: 0.00%
+2025-01-23 11:32:02,436 - INFO - housing: 0.00%
+2025-01-23 11:32:02,440 - INFO - loan: 0.00%
+2025-01-23 11:32:02,443 - INFO - contact: 28.80%
+2025-01-23 11:32:02,447 - INFO - day: 0.00%
+2025-01-23 11:32:02,453 - INFO - month: 0.00%
+2025-01-23 11:32:02,455 - INFO - duration: 0.00%
+2025-01-23 11:32:02,460 - INFO - campaign: 0.00%
+2025-01-23 11:32:02,463 - INFO - pdays: 0.00%
+2025-01-23 11:32:02,468 - INFO - previous: 0.00%
+2025-01-23 11:32:02,468 - INFO - poutcome: 81.75%
+2025-01-23 11:32:02,473 - INFO - y: 0.00%
+2025-01-23 11:32:02,493 - INFO - Dropped features with >80% null or unknown values: ['poutcome']
+2025-01-23 11:32:02,566 - INFO - Filled unknown values in 'job' column with mode value: blue-collar
+2025-01-23 11:32:02,619 - INFO - Filled unknown values in 'education' column with mode value: secondary
+2025-01-23 11:32:02,657 - INFO - Processed data saved as pickle at C:\Users\akish\Bank_Marketing_Prediction_MLOps\data\processed\processed_data.pkl
+2025-01-23 11:32:02,664 - INFO - Data processing completed successfully
+2025-01-23 12:58:56,721 - INFO - Starting EDA process
+2025-01-23 12:58:56,725 - INFO - Using input file: C:\Users\akish\Bank_Marketing_Prediction_MLOps\data\processed\outlier_handled_data.pkl
+2025-01-23 12:58:56,821 - INFO - Loaded data from C:\Users\akish\Bank_Marketing_Prediction_MLOps\data\processed\outlier_handled_data.pkl with shape (45211, 16)
+2025-01-23 12:58:56,858 - INFO - Data head:
+    age           job  marital  education default  balance housing loan  contact  day month  duration  campaign  pdays  previous   y
+0  58.0    management  married   tertiary      no   2143.0     yes   no  unknown  5.0   may     261.0       1.0   -1.0       0.0  no
+1  44.0    technician   single  secondary      no     29.0     yes   no  unknown  5.0   may     151.0       1.0   -1.0       0.0  no
+2  33.0  entrepreneur  married  secondary      no      2.0     yes  yes  unknown  5.0   may      76.0       1.0   -1.0       0.0  no
+3  47.0   blue-collar  married  secondary      no   1506.0     yes   no  unknown  5.0   may      92.0       1.0   -1.0       0.0  no
+4  33.0   blue-collar   single  secondary      no      1.0      no   no  unknown  5.0   may     198.0       1.0   -1.0       0.0  no
+2025-01-23 12:58:56,862 - INFO - Current column names: ['age', 'job', 'marital', 'education', 'default', 'balance', 'housing', 'loan', 'contact', 'day', 'month', 'duration', 'campaign', 'pdays', 'previous', 'y']
+2025-01-23 12:58:57,055 - INFO - Saved plot: C:\Users\akish\Bank_Marketing_Prediction_MLOps\data\processed\eda_plots\deposit_distribution.png
+2025-01-23 12:58:57,063 - INFO - Contact method distribution:
+contact
+cellular     0.647741
+unknown      0.287983
+telephone    0.064276
+Name: proportion, dtype: Float64
+2025-01-23 12:58:57,153 - INFO - Saved plot: C:\Users\akish\Bank_Marketing_Prediction_MLOps\data\processed\eda_plots\contact_method_distribution.png
+2025-01-23 12:58:57,667 - INFO - Saved plot: C:\Users\akish\Bank_Marketing_Prediction_MLOps\data\processed\eda_plots\housing_loan_distribution.png
+2025-01-23 12:58:57,765 - INFO - Saved plot: C:\Users\akish\Bank_Marketing_Prediction_MLOps\data\processed\eda_plots\personal_loan_distribution.png
+2025-01-23 12:58:57,859 - INFO - Saved plot: C:\Users\akish\Bank_Marketing_Prediction_MLOps\data\processed\eda_plots\default_status_distribution.png
+2025-01-23 12:58:57,859 - INFO - Month distribution:
+month
+may    0.304483
+jul    0.152507
+aug    0.138174
+jun    0.118135
+nov     0.08781
+apr    0.064851
+feb    0.058592
+jan    0.031032
+oct    0.016323
+sep    0.012807
+mar    0.010551
+dec    0.004733
+Name: proportion, dtype: Float64
+2025-01-23 12:58:57,981 - INFO - Saved plot: C:\Users\akish\Bank_Marketing_Prediction_MLOps\data\processed\eda_plots\month_distribution.png
+2025-01-23 12:58:58,069 - INFO - Saved plot: C:\Users\akish\Bank_Marketing_Prediction_MLOps\data\processed\eda_plots\age_distribution.png
+2025-01-23 12:58:58,169 - INFO - Saved plot: C:\Users\akish\Bank_Marketing_Prediction_MLOps\data\processed\eda_plots\job_distribution.png
+2025-01-23 12:58:58,247 - INFO - Saved plot: C:\Users\akish\Bank_Marketing_Prediction_MLOps\data\processed\eda_plots\marital_status_distribution.png
+2025-01-23 12:58:58,331 - INFO - Saved plot: C:\Users\akish\Bank_Marketing_Prediction_MLOps\data\processed\eda_plots\education_distribution.png
+2025-01-23 12:58:58,631 - INFO - Saved plot: C:\Users\akish\Bank_Marketing_Prediction_MLOps\data\processed\eda_plots\correlation_heatmap.png
+2025-01-23 12:58:58,638 - INFO - EDA process completed successfully
+2025-01-23 13:07:36,884 - INFO - Starting categorical encoding process
+2025-01-23 13:07:36,963 - INFO - Loaded data from C:\Users\akish\Bank_Marketing_Prediction_MLOps\data\processed\outlier_handled_data.pkl with shape (45211, 16)
+2025-01-23 13:07:36,967 - INFO - Column datatypes:
+2025-01-23 13:07:36,969 - INFO - age: float64
+2025-01-23 13:07:36,969 - INFO - job: string
+2025-01-23 13:07:36,976 - INFO - marital: string
+2025-01-23 13:07:36,977 - INFO - education: string
+2025-01-23 13:07:36,979 - INFO - default: string
+2025-01-23 13:07:36,981 - INFO - balance: float64
+2025-01-23 13:07:36,983 - INFO - housing: string
+2025-01-23 13:07:36,984 - INFO - loan: string
+2025-01-23 13:07:36,984 - INFO - contact: string
+2025-01-23 13:07:36,984 - INFO - day: float64
+2025-01-23 13:07:36,990 - INFO - month: string
+2025-01-23 13:07:36,992 - INFO - duration: float64
+2025-01-23 13:07:36,994 - INFO - campaign: float64
+2025-01-23 13:07:36,994 - INFO - pdays: float64
+2025-01-23 13:07:36,994 - INFO - previous: float64
+2025-01-23 13:07:36,999 - INFO - y: string
+2025-01-23 13:07:37,021 - INFO - Identified 9 categorical columns: ['job', 'marital', 'education', 'default', 'housing', 'loan', 'contact', 'month', 'y']
+2025-01-23 13:07:37,035 - INFO - Encoded column: job
+2025-01-23 13:07:37,038 - INFO - Saved LabelEncoder for job to C:\Users\akish\Bank_Marketing_Prediction_MLOps\data\processed\job_label_encoder.pkl
+2025-01-23 13:07:37,049 - INFO - Encoded column: marital
+2025-01-23 13:07:37,052 - INFO - Saved LabelEncoder for marital to C:\Users\akish\Bank_Marketing_Prediction_MLOps\data\processed\marital_label_encoder.pkl
+2025-01-23 13:07:37,063 - INFO - Encoded column: education
+2025-01-23 13:07:37,066 - INFO - Saved LabelEncoder for education to C:\Users\akish\Bank_Marketing_Prediction_MLOps\data\processed\education_label_encoder.pkl
+2025-01-23 13:07:37,077 - INFO - Encoded column: default
+2025-01-23 13:07:37,079 - INFO - Saved LabelEncoder for default to C:\Users\akish\Bank_Marketing_Prediction_MLOps\data\processed\default_label_encoder.pkl
+2025-01-23 13:07:37,083 - INFO - Encoded column: housing
+2025-01-23 13:07:37,093 - INFO - Saved LabelEncoder for housing to C:\Users\akish\Bank_Marketing_Prediction_MLOps\data\processed\housing_label_encoder.pkl
+2025-01-23 13:07:37,101 - INFO - Encoded column: loan
+2025-01-23 13:07:37,108 - INFO - Saved LabelEncoder for loan to C:\Users\akish\Bank_Marketing_Prediction_MLOps\data\processed\loan_label_encoder.pkl
+2025-01-23 13:07:37,119 - INFO - Encoded column: contact
+2025-01-23 13:07:37,121 - INFO - Saved LabelEncoder for contact to C:\Users\akish\Bank_Marketing_Prediction_MLOps\data\processed\contact_label_encoder.pkl
+2025-01-23 13:07:37,126 - INFO - Encoded column: month
+2025-01-23 13:07:37,136 - INFO - Saved LabelEncoder for month to C:\Users\akish\Bank_Marketing_Prediction_MLOps\data\processed\month_label_encoder.pkl
+2025-01-23 13:07:37,142 - INFO - Encoded column: y
+2025-01-23 13:07:37,148 - INFO - Saved LabelEncoder for y to C:\Users\akish\Bank_Marketing_Prediction_MLOps\data\processed\y_label_encoder.pkl
+2025-01-23 13:07:37,350 - INFO - Saved encoded data to CSV file: C:\Users\akish\Bank_Marketing_Prediction_MLOps\data\processed\encoded_data.csv
+2025-01-23 13:07:37,358 - INFO - Saved encoded data to pickle file: C:\Users\akish\Bank_Marketing_Prediction_MLOps\data\processed\encoded_data.pkl
+2025-01-23 13:07:37,360 - INFO - Categorical encoding process completed successfully
