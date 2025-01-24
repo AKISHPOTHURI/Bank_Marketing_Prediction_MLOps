@@ -91,5 +91,5 @@ def correlation_analysis(input_file_path):
         raise
 
 if __name__ == "__main__":
-    #input_file_path = os.path.join(DATA_DIR, "encoded_data.pkl")  # Adjust this path if needed
+    input_file_path = os.path.join(DATA_DIR, "encoded_data.pkl")  # Adjust this path if needed
     correlation_analysis()

@@ -3962,3 +3962,37 @@ Name: proportion, dtype: Float64
 2025-01-23 13:07:37,350 - INFO - Saved encoded data to CSV file: C:\Users\akish\Bank_Marketing_Prediction_MLOps\data\processed\encoded_data.csv
 2025-01-23 13:07:37,358 - INFO - Saved encoded data to pickle file: C:\Users\akish\Bank_Marketing_Prediction_MLOps\data\processed\encoded_data.pkl
 2025-01-23 13:07:37,360 - INFO - Categorical encoding process completed successfully
+2025-01-23 14:02:48,956 - INFO - Starting correlation analysis
+2025-01-23 14:02:48,960 - INFO - Input file: C:\Users\akish\Bank_Marketing_Prediction_MLOps\data\processed\encoded_data.pkl
+2025-01-23 14:02:49,010 - INFO - Loaded data from C:\Users\akish\Bank_Marketing_Prediction_MLOps\data\processed\encoded_data.pkl with shape (45211, 16)
+2025-01-23 14:02:49,068 - INFO - Correlation matrix saved to C:\Users\akish\Bank_Marketing_Prediction_MLOps\data\processed\correlation_matrix.csv
+2025-01-23 14:02:49,070 - INFO - Correlation matrix saved to C:\Users\akish\Bank_Marketing_Prediction_MLOps\data\processed\correlation_matrix.pkl
+2025-01-23 14:02:49,106 - INFO - No highly correlated pairs found.
+2025-01-23 14:02:49,756 - INFO - Correlation heatmap saved to C:\Users\akish\Bank_Marketing_Prediction_MLOps\data\processed\eda_plots\correlation_heatmap.png
+2025-01-23 14:02:49,761 - INFO - Correlation analysis completed successfully
+2025-01-23 14:28:49,434 - INFO - Starting SMOTE analysis with scaling and normalization
+2025-01-23 14:28:49,437 - INFO - Input file: data\processed\encoded_data.pkl
+2025-01-23 14:28:49,439 - ERROR - An error occurred during SMOTE analysis: [Errno 2] No such file or directory: 'data\\processed\\encoded_data.pkl'
+2025-01-23 14:30:07,688 - INFO - Starting SMOTE analysis with scaling and normalization
+2025-01-23 14:30:07,690 - INFO - Input file: data\processed\encoded_data.pkl
+2025-01-23 14:30:07,692 - ERROR - An error occurred during SMOTE analysis: [Errno 2] No such file or directory: 'data\\processed\\encoded_data.pkl'
+2025-01-23 14:30:37,864 - INFO - Starting SMOTE analysis with scaling and normalization
+2025-01-23 14:30:37,867 - INFO - Input file: C:\Users\akish\Bank_Marketing_Prediction_MLOps\data\processed\encoded_data.pkl
+2025-01-23 14:30:37,883 - INFO - Loaded data from C:\Users\akish\Bank_Marketing_Prediction_MLOps\data\processed\encoded_data.pkl with shape (45211, 16)
+2025-01-23 14:30:37,911 - INFO - Target variable distribution before processing:
+y
+0    0.883015
+1    0.116985
+Name: proportion, dtype: float64
+2025-01-23 14:30:37,943 - INFO - Applied Min-Max scaling
+2025-01-23 14:30:37,953 - INFO - Saved scaler to C:\Users\akish\Bank_Marketing_Prediction_MLOps\data\processed\scaler.pkl
+2025-01-23 14:30:37,959 - INFO - Saved normalizer to C:\Users\akish\Bank_Marketing_Prediction_MLOps\data\processed\normalizer.pkl
+2025-01-23 14:30:37,961 - INFO - Applied normalization
+2025-01-23 14:30:38,161 - INFO - Shape of training data before SMOTE: (36168, 15)
+2025-01-23 14:30:38,163 - INFO - Shape of training data after SMOTE: (63940, 15)
+2025-01-23 14:30:38,167 - INFO - Target variable distribution after SMOTE:
+y
+0    0.5
+1    0.5
+Name: proportion, dtype: float64
+2025-01-23 14:30:39,037 - INFO - SMOTE analysis with scaling, normalization, and GCS upload completed successfully

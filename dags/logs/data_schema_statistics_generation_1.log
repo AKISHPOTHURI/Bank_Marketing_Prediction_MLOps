@@ -1,0 +1,4 @@
+2025-01-23 15:17:48,017 - INFO - Loaded data from C:\Users\akish\Bank_Marketing_Prediction_MLOps\data\processed\raw_data.csv with shape (45211, 17)
+2025-01-23 15:17:48,043 - INFO - Prepared training data with shape (27126, 17)
+2025-01-23 15:17:48,047 - INFO - Prepared evaluation data with shape (9042, 17)
+2025-01-23 15:17:48,049 - INFO - Prepared serving data with shape (9043, 16)

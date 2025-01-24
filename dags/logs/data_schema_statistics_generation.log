@@ -3843,3 +3843,11 @@ Name: proportion, dtype: float64
 2024-11-23 10:48:11,848 - INFO - File files/md5/75/Processed_Files/test_data already exists. Overwriting...
 2024-11-23 10:48:12,513 - INFO - Uploaded CSV data to gs://mlopsprojectdatabucketgrp6/files/md5/75/Processed_Files/test_data
 2024-11-23 10:48:12,520 - INFO - SMOTE analysis with scaling, normalization, and GCS upload completed successfully
+2025-01-23 15:02:22,776 - INFO - Loaded data from C:\Users\akish\Bank_Marketing_Prediction_MLOps\data\processed\raw_data.csv with shape (45211, 17)
+2025-01-23 15:02:22,805 - INFO - Prepared training data with shape (27126, 17)
+2025-01-23 15:02:22,807 - INFO - Prepared evaluation data with shape (9042, 17)
+2025-01-23 15:02:22,809 - INFO - Prepared serving data with shape (9043, 16)
+2025-01-23 15:17:48,017 - INFO - Loaded data from C:\Users\akish\Bank_Marketing_Prediction_MLOps\data\processed\raw_data.csv with shape (45211, 17)
+2025-01-23 15:17:48,043 - INFO - Prepared training data with shape (27126, 17)
+2025-01-23 15:17:48,047 - INFO - Prepared evaluation data with shape (9042, 17)
+2025-01-23 15:17:48,049 - INFO - Prepared serving data with shape (9043, 16)
