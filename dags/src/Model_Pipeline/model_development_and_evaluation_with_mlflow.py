@@ -154,7 +154,7 @@ def evaluate_model_performance(y_test, y_pred, threshold=0.7):
     logger.info(f"Model performance metrics: {json.dumps(metrics)}")
     
     return all(metric >= threshold for metric in metrics.values()), metrics
-
+    
 def train_and_log_model(X_train, y_train, X_test, y_test):
     """Train multiple models and log results with MLflow"""
     run_name = datetime.now().strftime("%Y%m%d-%H%M%S")
